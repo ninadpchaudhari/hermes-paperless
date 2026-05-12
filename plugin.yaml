@@ -1,0 +1,16 @@
+name: hermes-paperless-share
+version: 1.0.0
+description: Metadata-only Paperless-ngx plugin that searches documents and creates share links without downloading files.
+
+tools:
+  - name: search_paperless
+    description: Search Paperless-ngx documents by metadata and return only id, title, and created.
+    input_schema: schemas:SEARCH_PAPERLESS_INPUT_SCHEMA
+    output_schema: schemas:SEARCH_PAPERLESS_OUTPUT_SCHEMA
+    handler: main:search_paperless
+
+  - name: create_share_link
+    description: Create a Paperless-ngx share link for a document archive file version.
+    input_schema: schemas:CREATE_SHARE_LINK_INPUT_SCHEMA
+    output_schema: schemas:CREATE_SHARE_LINK_OUTPUT_SCHEMA
+    handler: main:create_share_link
