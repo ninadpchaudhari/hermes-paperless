@@ -126,3 +126,5 @@ Example output:
 - This plugin is designed for handing share links to users or passing links as text to another plugin (for example, Google Workspace integration).
 - It intentionally does not fetch file bytes and does not write local files.
 - Use `max_results` when you want a smaller or larger search slice from a broader Paperless corpus.
+
+- I did not go with existing plugins as I really don't need much of the functionality they provide, and I wanted to keep this focused on metadata search and share link generation. Even the search tool is focused on metadata only, to minimise context size.
